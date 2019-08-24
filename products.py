@@ -9,3 +9,7 @@ while True:
 
 for p in products:
 	print(p[0], '的價格是', p[1], '元')
+
+with open('products.txt', 'w') as f:
+	for p in products:
+		f.write(p[0] + ',' + p[1] + '元' + '\n' )
